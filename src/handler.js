@@ -223,7 +223,7 @@ const updateBookByIdHandler = (request, h) => {
     return response;
 };
 
-const deleteBookById = (request, h) => {
+const deleteBookByIdHandler = (request, h) => {
     const { id } = request.params;
 
     const index = detailBooks.findIndex((book) => book.id === id);
@@ -251,5 +251,5 @@ module.exports = {
     getAllBookHandler,
     getBookByIdHandler,
     updateBookByIdHandler,
-    deleteBookById,
+    deleteBookByIdHandler,
 };
